@@ -1,57 +1,79 @@
-# LEI
+# LEI — Stamp Detection and Recognition Datasets
 
-## Datasets
+[![Paper](https://img.shields.io/badge/DOI-10.1093%2Fijl%2Fecag001-blue)](https://doi.org/10.1093/ijl/ecag001)
 
-### Detection (LEI-Detection)
+Three datasets built from the scanned index cards of the *Lessico Etimologico Italiano* (LEI),
+released with the paper:
 
-Scanned index cards with bounding-box annotations for three object classes (stamp, etymon, content). 
+> **Deep Learning for Textual Stamp Recognition on Index Cards of the Lessico Etimologico Italiano**
+> Korfhage et al. (2026), *International Journal of Lexicography* 39, ecag001.
+> [https://doi.org/10.1093/ijl/ecag001](https://doi.org/10.1093/ijl/ecag001)
 
-- Train:
-  - Stamp: 6,115 instances
-  - Etymon: 12,731 instances
-  - Content: 6,349 instances
-- Validation:
-  - Stamp: 644 instances
-  - Etymon: 1,230 instances
-  - Content: 663 instances
-- Total:
-  - Stamp: 6,759 instances
-  - Etymon: 13,961 instances
-  - Content: 7,012 instances
+## Overview
 
-Download:  
-https://next.hessenbox.de/index.php/s/75afxwmToTge2gX
+| Dataset | Task | Size | Download |
+| --- | --- | --- | --- |
+| [LEI-Detection](#lei-detection) | Detection of stamp, etymon, content | 27,732 instances | [Hessenbox](https://next.hessenbox.de/index.php/s/75afxwmToTge2gX) |
+| [LEI-Stamps](#lei-stamps) | Stamp recognition, 3,817 classes | 170,400 images | [Hessenbox](https://next.hessenbox.de/index.php/s/QFHKTqwzpwg6Tce) |
+| [LEI-Benchmark](#lei-benchmark) | End-to-end evaluation | 1,369 cards | [Hessenbox](https://next.hessenbox.de/index.php/s/oXjMwWSXY4w23Ra) |
 
----
+## LEI-Detection
 
-### Recognition (LEI-Stamps)
+Scanned index cards with bounding boxes for three classes: stamp, etymon, content.
 
-Cropped textual stamp images used for stamp recognition. 
+| Class | Train | Validation | Total |
+| --- | ---: | ---: | ---: |
+| Stamp | 6,115 | 644 | 6,759 |
+| Etymon | 12,731 | 1,230 | 13,961 |
+| Content | 6,349 | 663 | 7,012 |
+| **Total** | **25,195** | **2,537** | **27,732** |
 
-- Total images: 170,400
-- Unique stamp classes: 3,817
-- Train split:
-  - 161,652 images
-  - 3,817 stamp classes
-- Validation split:
-  - 8,748 images
-  - 2,916 stamp classes (stamps with ≥4 instances)
-  - 3 images per class in validation
-  
-Download:  
-https://next.hessenbox.de/index.php/s/QFHKTqwzpwg6Tce
+Download: https://next.hessenbox.de/index.php/s/75afxwmToTge2gX
 
----
+## LEI-Stamps
 
-### Benchmark (LEI-Benchmark)
+Cropped textual stamp images. Validation covers stamp classes with at least four instances,
+three images per class.
 
-Full index-card images (no bounding boxes) for end-to-end benchmarking of stamp detection and recognition, including cards without stamps. 
+| Split | Images | Stamp classes |
+| --- | ---: | ---: |
+| Train | 161,652 | 3,817 |
+| Validation | 8,748 | 2,916 |
+| **Total** | **170,400** | **3,817** |
 
-- Total index cards: 1,369
-- Cards with stamp: 1,348
-- Cards without stamp: 21
-- Unique stamps: 638
+Download: https://next.hessenbox.de/index.php/s/QFHKTqwzpwg6Tce
 
+## LEI-Benchmark
 
-Download:  
-https://next.hessenbox.de/index.php/s/oXjMwWSXY4w23Ra
+Full index cards without bounding boxes, for end-to-end evaluation of detection and
+recognition, including cards without a stamp.
+
+| | Count |
+| --- | ---: |
+| Index cards | 1,369 |
+| Cards with stamp | 1,348 |
+| Cards without stamp | 21 |
+| Unique stamps | 638 |
+
+Download: https://next.hessenbox.de/index.php/s/oXjMwWSXY4w23Ra
+
+## License
+
+The datasets are released under
+[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+
+## Citation
+
+```bibtex
+@article{korfhage2026deep,
+  title   = {Deep Learning for Textual Stamp Recognition on Index Cards of the Lessico Etimologico Italiano},
+  author  = {Korfhage, Nikolaus and Bellafkir, Hicham and M{\"u}hling, Markus and Vogelbacher, Markus and Prifti, Elton and Freisleben, Bernd},
+  journal = {International Journal of Lexicography},
+  volume  = {39},
+  pages   = {ecag001},
+  year    = {2026},
+  month   = {01},
+  issn    = {1477-4577},
+  doi     = {10.1093/ijl/ecag001}
+}
+```
