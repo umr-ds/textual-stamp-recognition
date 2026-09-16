@@ -13,9 +13,9 @@ released with the paper:
 
 | Dataset | Task | Size | Download |
 | --- | --- | --- | --- |
-| [LEI-Detection](#lei-detection) | Detection of stamp, etymon, content | 27,732 instances | [Hessenbox](https://next.hessenbox.de/index.php/s/75afxwmToTge2gX) |
-| [LEI-Stamps](#lei-stamps) | Stamp recognition, 3,817 classes | 170,400 images | [Hessenbox](https://next.hessenbox.de/index.php/s/QFHKTqwzpwg6Tce) |
-| [LEI-Benchmark](#lei-benchmark) | End-to-end evaluation | 1,369 cards | [Hessenbox](https://next.hessenbox.de/index.php/s/oXjMwWSXY4w23Ra) |
+| [LEI-Detection](#lei-detection) | Detection of stamp, etymon, content | 27,732 instances | [Download](https://zenodo.org/records/22788319/files/detection_dataset.zip?download=1) |
+| [LEI-Stamps](#lei-stamps) | Stamp recognition, 3,817 classes | 170,400 images | [Download](https://zenodo.org/records/22788319/files/recognition_dataset.zip?download=1) |
+| [LEI-Benchmark](#lei-benchmark) | End-to-end evaluation | 1,369 cards | [Download](https://zenodo.org/records/22788319/files/index_cards_benchmark.zip?download=1) |
 
 ## LEI-Detection
 
