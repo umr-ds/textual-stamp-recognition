@@ -9,13 +9,22 @@ released with the paper:
 > Korfhage et al. (2026), *International Journal of Lexicography* 39, ecag001.
 > [https://doi.org/10.1093/ijl/ecag001](https://doi.org/10.1093/ijl/ecag001)
 
+<p align="center">
+  <img src="assets/index_card.png" alt="LEI index card with annotated etymon, content and stamp" width="520">
+</p>
+<p align="center">
+  <sub>An index card with the three annotated classes: etymon (green), content (orange), stamp (red).</sub>
+</p>
+
 ## Overview
 
 | Dataset | Task | Size | Download |
 | --- | --- | --- | --- |
-| [LEI-Detection](#lei-detection) | Detection of stamp, etymon, content | 27,732 instances | [Download](https://zenodo.org/records/22788319/files/detection_dataset.zip?download=1) |
-| [LEI-Stamps](#lei-stamps) | Stamp recognition, 3,817 classes | 170,400 images | [Download](https://zenodo.org/records/22788319/files/recognition_dataset.zip?download=1) |
-| [LEI-Benchmark](#lei-benchmark) | End-to-end evaluation | 1,369 cards | [Download](https://zenodo.org/records/22788319/files/index_cards_benchmark.zip?download=1) |
+| [LEI-Detection](#lei-detection) | Detection of stamp, etymon, content | 27,732 instances | [detection_dataset.zip](https://zenodo.org/records/22788319/files/detection_dataset.zip?download=1) |
+| [LEI-Stamps](#lei-stamps) | Stamp recognition, 3,817 classes | 170,400 images | [recognition_dataset.zip](https://zenodo.org/records/22788319/files/recognition_dataset.zip?download=1) |
+| [LEI-Benchmark](#lei-benchmark) | End-to-end evaluation | 1,369 cards | [index_cards_benchmark.zip](https://zenodo.org/records/22788319/files/index_cards_benchmark.zip?download=1) |
+
+[Link to Full dataset](https://zenodo.org/records/22788319)
 
 ## LEI-Detection
 
@@ -28,7 +37,7 @@ Scanned index cards with bounding boxes for three classes: stamp, etymon, conten
 | Content | 6,349 | 663 | 7,012 |
 | **Total** | **25,195** | **2,537** | **27,732** |
 
-Download: https://next.hessenbox.de/index.php/s/75afxwmToTge2gX
+Download: [detection_dataset.zip](https://zenodo.org/records/22788319/files/detection_dataset.zip?download=1)
 
 ## LEI-Stamps
 
@@ -41,7 +50,15 @@ three images per class.
 | Validation | 8,748 | 2,916 |
 | **Total** | **170,400** | **3,817** |
 
-Download: https://next.hessenbox.de/index.php/s/QFHKTqwzpwg6Tce
+<p align="center">
+  <img src="assets/stamp_examples.png" alt="Examples of textual stamps from the index cards" width="420">
+</p>
+<p align="center">
+  <sub>Stamps vary in font, color, scale and rotation, and are often struck through, overwritten
+  by hand or faded into the card background.</sub>
+</p>
+
+Download: [recognition_dataset.zip](https://zenodo.org/records/22788319/files/recognition_dataset.zip?download=1)
 
 ## LEI-Benchmark
 
@@ -55,7 +72,7 @@ recognition, including cards without a stamp.
 | Cards without stamp | 21 |
 | Unique stamps | 638 |
 
-Download: https://next.hessenbox.de/index.php/s/oXjMwWSXY4w23Ra
+Download: [index_cards_benchmark.zip](https://zenodo.org/records/22788319/files/index_cards_benchmark.zip?download=1)
 
 ## License
 
